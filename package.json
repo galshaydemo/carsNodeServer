@@ -1,0 +1,22 @@
+{
+  "name": "carmanager-server",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=.env.local index.js",
+    "seed": "node --env-file=.env.local seed.js",
+    "migrate": "node --env-file=.env.local migrate.js"
+  },
+  "dependencies": {
+    "@dataconnect/generated": "file:src/dataconnect-generated",
+    "@supabase/ssr": "^0.12.0",
+    "@supabase/supabase-js": "^2.108.1",
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase": "^12.14.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
