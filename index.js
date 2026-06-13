@@ -30,6 +30,7 @@ function dbError(res, error) {
 
 // ---- Auth ----
 app.post('/api/auth/login', async (req, res) => {
+  alert('aaaa')
   const { username, password } = req.body || {};
   const { data: user, error } = await supabase
     .from('users')
